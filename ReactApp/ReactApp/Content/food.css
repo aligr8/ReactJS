@@ -1,0 +1,145 @@
+﻿body {
+}
+
+.title-big {
+    color: rgb(128, 128, 128);
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.myCart {
+    background-color: #428bca;
+    height: 35px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+#wrapper{
+    display:flex;
+}
+
+.grandTotal {
+    height: 38px;
+    background-color: #ddd;
+    padding: 5px;
+}
+
+.greenBtn {
+    background-color: green;
+    color: white;
+    margin-left: 5px;
+    width:200px;
+    height:40px;
+}
+
+.orderPlaced {
+    height: 38px;
+    background-color: #ddd;
+    padding: 5px;
+    color: green;
+    font-size: 25px;
+}
+
+.cartEmpty {
+    text-align: center;
+}
+
+.cartNotEmpty {
+    padding: 0 0 0 5px;
+}
+
+
+#dvmenu {
+    flex: 0 0 85%;
+    border: 0px #ccc solid;
+}
+
+#dvmenu div {
+        width: 280px;
+        margin: 10px;
+        display: inline-block;
+        text-align: justify;
+        vertical-align: top;
+}
+
+@media (min-width:401px) {
+    #dvcart {
+        flex: 1;
+        border: 1px #ccc solid;
+        background-color: aliceblue;
+        height: 360px;
+        width: 385px;
+        margin-top: 0;
+        position: fixed;
+        right: 100px;
+    }
+
+    #cartContent {
+        height: 285px;
+        overflow-y: scroll;
+    }
+
+    .smartButton {
+        display:none;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    #dvcart {
+        flex: 1;
+        border: 1px #ccc solid;
+        width: 100%;
+        margin: 0;
+        position: fixed;
+        bottom: -2px;
+        right: 0;
+    }
+
+    #cartContent {
+        display: none;
+        background-color: aliceblue;
+        height: 200px;
+        overflow-y: scroll;
+    }
+    .smartButton {
+        display: block;        
+    }
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.popup_inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    margin: auto;
+    background: white;
+}
+
+#cartContent div {
+    height: 110px;
+    margin: 5px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+#dvcart.fixed {
+    position: fixed;
+    top: 50px;
+}
+

@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/slnx.sqlite
+/ReactApp/packages
+/ReactApp/.vs/ReactApp/v15/Server/sqlite3/db.lock

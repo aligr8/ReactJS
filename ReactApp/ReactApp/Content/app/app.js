@@ -1,0 +1,1 @@
+﻿const a = "this is a new syntax in es6";
